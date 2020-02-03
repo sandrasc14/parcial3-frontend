@@ -1,0 +1,40 @@
+<ng-container>
+  <mat-dialog-content>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 content-patinete">
+          <h5><strong>Información del patinete {{this.patinete.identificador}}</strong></h5>
+          <div class="content-info">
+            <div>
+              <ul>
+                <li><label class="text-info">Estado:</label> {{this.patinete.estado}}</li>
+                <li><label class="text-info">Coordenadas:</label> ({{this.patinete.latitud}},
+                  {{this.patinete.longitud}})</li>
+              </ul>
+            </div>
+          </div>
+          <button mat-button mat-dialog-close class="dialog-close">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="content-maps">
+        <app-maps [point]="this.patinete" (locationMarker)="locationMarker($event)"></app-maps>
+      </div>
+      <div class="content-actions">
+        <button mat-flat-button (click)="onNoClick()" type="submit" class="btn-cancel" color="primary">
+          <mat-icon>close</mat-icon>
+          Cancelar
+        </button>
+        <button *ngIf="patineteOcupado" mat-flat-button type="submit" color="primary">
+          <mat-icon>library_add_check</mat-icon>
+          Alquilar
+        </button>
+        <button *ngIf="!patineteOcupado" mat-flat-button type="submit" color="primary">
+          <mat-icon>assignment_return</mat-icon>
+          Liberar
+        </button>
+      </div>
+    </div>
+  </mat-dialog-content>
+</ng-container>

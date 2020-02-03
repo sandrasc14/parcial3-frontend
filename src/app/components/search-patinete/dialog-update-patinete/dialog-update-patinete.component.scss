@@ -1,0 +1,99 @@
+
+.py-3{
+    text-align:center;
+    font-weight: bold;
+    color: #2755A6;
+    font-size: 16px;
+}
+
+.content-actions{
+  text-align: center;
+  margin: 7px 0;
+}
+
+.mat-dialog-content{
+  max-height: 100%;
+}
+
+.content-dispatchs{
+  overflow-y: auto;
+  height: 440px;
+}
+
+.btn-cancel{
+  margin-right: 5px;
+}
+ 
+.btn-estado{
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+}
+
+.content-info{
+  width: 100%;
+  display: flex;
+}
+
+.return{
+  color: #2755A6;
+  font-weight: bold;
+  cursor: pointer;
+}
+  .map-container{
+    width: 100%;
+    display: flex;
+} 
+
+.address{
+  width: 90%;
+}
+
+.width-30{
+    width: 30%;
+}
+
+.width-70{
+  width: 70%;
+}
+
+.mat-dialog-actions {
+  padding: 0px !important;
+  margin-bottom: 0px;
+}
+
+.content-patinete{
+  margin-top: 10px;
+}
+ 
+  .dialog-close {
+    float: right !important;
+    cursor: pointer;
+    display: block;
+    height: 34px;
+    padding: 0 !important;
+    position: absolute;
+    right: 21px;
+    top: 10px;
+    width: 30px;
+    min-width: 30px !important;
+    &:focus {
+      outline: none;
+    }
+
+    .mat-button-focus-overlay {
+      display: none;
+    }
+  
+
+  .mat-button-focus-overlay {
+    display: none;
+  }
+}
+    li{
+      font-family: sans-serif;
+    }
+    
+    .text-info{
+      font-weight: bold;
+    }
